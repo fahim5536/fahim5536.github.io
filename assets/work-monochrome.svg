@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="monoTitle monoDesc">
+  <title id="monoTitle">Monochrome type specimen placeholder</title>
+  <desc id="monoDesc">An editorial type specimen poster with a large serif Aa, grid lines and small caption text.</desc>
+  <defs>
+    <filter id="mGrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="#F5F1EA"/>
+
+  <g stroke="#2B2A27" stroke-opacity="0.1">
+    <line x1="80" y1="0" x2="80" y2="900"/>
+    <line x1="1120" y1="0" x2="1120" y2="900"/>
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="820" x2="1200" y2="820"/>
+  </g>
+
+  <text x="80" y="140" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="4" fill="#6E6A62">TYPE SPECIMEN — NO. 04</text>
+  <text x="1120" y="140" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="4" fill="#6E6A62">SERIF DISPLAY</text>
+
+  <text x="600" y="660" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="520" fill="#2B2A27" letter-spacing="-18">Aa</text>
+
+  <line x1="80" y1="716" x2="1120" y2="716" stroke="#2B2A27" stroke-opacity="0.2"/>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#2B2A27">
+    <text x="80" y="766" font-size="12" letter-spacing="3" fill="#5D6553">ABCDEFGHIJKLMNOPQRSTUVWXYZ</text>
+    <text x="80" y="792" font-size="12" letter-spacing="3" fill="#8A857C">abcdefghijklmnopqrstuvwxyz 0123456789</text>
+    <text x="1120" y="766" text-anchor="end" font-size="12" fill="#6E6A62">Playfair Display</text>
+    <text x="1120" y="792" text-anchor="end" font-size="12" fill="#6E6A62">Regular · 400</text>
+  </g>
+
+  <circle cx="1084" cy="640" r="22" fill="#7D8471"/>
+
+  <rect width="1200" height="900" filter="url(#mGrain)"/>
+</svg>

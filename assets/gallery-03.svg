@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="g3t g3d">
+  <title id="g3t">Botanical line study placeholder</title>
+  <desc id="g3d">A cream poster with delicate sage line illustrations of grasses and seed heads.</desc>
+  <defs>
+    <filter id="g3g"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="800" height="1000" fill="#F5F1EA"/>
+  <text x="64" y="96" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="4" fill="#6E6A62">BOTANICAL STUDY — NO. 02</text>
+  <g fill="none" stroke="#7D8471" stroke-width="2" stroke-linecap="round">
+    <path d="M400 830C396 640 380 470 330 330"/>
+    <path d="M400 830C410 650 438 500 488 360"/>
+    <path d="M330 330c-26-30-36-66-30-102M330 330c22-18 34-44 34-72M330 330c-40 0-72-14-94-40"/>
+    <path d="M488 360c14-38 10-76-10-110M488 360c32-12 56-36 68-66M488 360c-24-28-32-62-26-96"/>
+    <path d="M400 830c-20-100-44-180-84-250"/>
+    <path d="M400 830c18-110 40-190 78-260"/>
+  </g>
+  <g fill="#7D8471" opacity="0.5">
+    <ellipse cx="300" cy="228" rx="10" ry="4" transform="rotate(-32 300 228)"/>
+    <ellipse cx="522" cy="250" rx="10" ry="4" transform="rotate(26 522 250)"/>
+    <ellipse cx="236" cy="290" rx="8" ry="3" transform="rotate(-44 236 290)"/>
+    <ellipse cx="556" cy="294" rx="8" ry="3" transform="rotate(38 556 294)"/>
+  </g>
+  <rect x="64" y="830" width="672" height="1" fill="#2B2A27" opacity="0.12"/>
+  <text x="64" y="884" font-family="Georgia, serif" font-size="30" fill="#2B2A27">Herbarium</text>
+  <text x="64" y="918" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#8A857C">INK ON PAPER · 2026</text>
+  <rect width="800" height="1000" filter="url(#g3g)"/>
+</svg>

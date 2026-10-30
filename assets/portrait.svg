@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 950" width="760" height="950" role="img" aria-labelledby="portraitTitle portraitDesc">
+  <title id="portraitTitle">Placeholder portrait</title>
+  <desc id="portraitDesc">Abstract still life: dried grasses in a sage ceramic vase under warm afternoon light.</desc>
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDE6DA"/>
+      <stop offset="0.62" stop-color="#E8DFD0"/>
+      <stop offset="1" stop-color="#DED3C1"/>
+    </linearGradient>
+    <radialGradient id="pSun" cx="0.68" cy="0.24" r="0.55">
+      <stop offset="0" stop-color="#F5F1EA" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F5F1EA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pVase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8F9583"/>
+      <stop offset="0.55" stop-color="#7D8471"/>
+      <stop offset="1" stop-color="#646A59"/>
+    </linearGradient>
+    <filter id="pGrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.06"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="pSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="pFrame">
+      <rect x="0" y="0" width="760" height="950"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#pFrame)">
+    <rect width="760" height="950" fill="url(#pBg)"/>
+    <rect width="760" height="950" fill="url(#pSun)"/>
+
+    <!-- window light -->
+    <g opacity="0.5" fill="#F5F1EA">
+      <rect x="470" y="0" width="120" height="950" transform="rotate(-8 530 475)"/>
+      <rect x="610" y="0" width="36" height="950" transform="rotate(-8 628 475)"/>
+    </g>
+
+    <!-- table -->
+    <rect x="0" y="742" width="760" height="208" fill="#D9CEBC"/>
+    <ellipse cx="380" cy="742" rx="330" ry="16" fill="#CFC3AE" opacity="0.7"/>
+
+    <!-- shadow behind vase -->
+    <ellipse cx="424" cy="760" rx="180" ry="26" fill="#C4B7A2" opacity="0.55" filter="url(#pSoft)"/>
+
+    <!-- dried grasses -->
+    <g fill="none" stroke-linecap="round">
+      <g stroke="#A98F69" stroke-width="2.4" opacity="0.9">
+        <path d="M352 610C348 470 330 340 288 214"/>
+        <path d="M366 606C374 468 396 320 436 196"/>
+        <path d="M340 616C318 500 270 386 214 300"/>
+        <path d="M382 610C402 512 448 408 512 322"/>
+        <path d="M356 618C356 520 352 420 340 330"/>
+      </g>
+      <g stroke="#B9A177" stroke-width="1.6" opacity="0.85">
+        <path d="M288 214c-18-22-24-46-20-70M288 214c14-14 22-32 22-50M288 214c-30 0-54-10-70-28"/>
+        <path d="M436 196c10-26 8-52-6-76M436 196c22-8 40-24 50-44M436 196c-16-20-22-44-18-68"/>
+        <path d="M214 300c-26-8-46-24-58-46M214 300c-8-24-6-48 6-70"/>
+        <path d="M512 322c26-6 48-20 62-40M512 322c6-26 2-50-10-72"/>
+        <path d="M340 330c-22-14-36-36-40-62M340 330c16-20 24-44 22-68"/>
+      </g>
+      <g stroke="#8D7B5C" stroke-width="1.2" opacity="0.6">
+        <path d="M352 610C346 520 322 430 284 360"/>
+        <path d="M366 606C380 520 412 440 458 372"/>
+      </g>
+    </g>
+
+    <!-- floating seed heads -->
+    <g fill="#C9B48C" opacity="0.8">
+      <ellipse cx="268" cy="140" rx="9" ry="3" transform="rotate(-28 268 140)"/>
+      <ellipse cx="452" cy="118" rx="8" ry="2.6" transform="rotate(22 452 118)"/>
+      <ellipse cx="206" cy="252" rx="7" ry="2.4" transform="rotate(-40 206 252)"/>
+      <ellipse cx="542" cy="278" rx="9" ry="2.6" transform="rotate(30 542 278)"/>
+      <ellipse cx="330" cy="262" rx="6" ry="2" transform="rotate(-18 330 262)"/>
+    </g>
+
+    <!-- vase -->
+    <path d="M300 606c-6 34-30 58-32 100-3 55 33 92 112 92s115-37 112-92c-2-42-26-66-32-100z" fill="url(#pVase)"/>
+    <path d="M300 606c-6 34-30 58-32 100-3 55 33 92 112 92 34 0 61-8 79-23-48 4-118-8-142-44-21-32-17-80-17-125z" fill="#F5F1EA" opacity="0.12"/>
+    <ellipse cx="380" cy="606" rx="82" ry="17" fill="#6B705E"/>
+    <ellipse cx="380" cy="602" rx="70" ry="12" fill="#4F5445" opacity="0.55"/>
+    <path d="M330 640c16 12 84 12 100 0" stroke="#F5F1EA" stroke-width="2" opacity="0.18" fill="none" stroke-linecap="round"/>
+
+    <!-- stray leaf -->
+    <path d="M592 806c30-16 58-14 82 4-26 16-54 15-82-4z" fill="#9CA089" opacity="0.65"/>
+    <path d="M596 808c26-8 48-8 66 2" stroke="#7D8471" stroke-width="1.4" fill="none" opacity="0.7"/>
+
+    <rect width="760" height="950" filter="url(#pGrain)" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="verdeTitle verdeDesc">
+  <title id="verdeTitle">Verde Coffee packaging placeholder</title>
+  <desc id="verdeDesc">A cream coffee bag with a sage label, a ceramic cup and scattered beans on a warm sand surface.</desc>
+  <defs>
+    <linearGradient id="vBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFE8DC"/>
+      <stop offset="1" stop-color="#DED3BF"/>
+    </linearGradient>
+    <linearGradient id="vBag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8DFD0"/>
+      <stop offset="0.55" stop-color="#F5F1EA"/>
+      <stop offset="1" stop-color="#D9CDB8"/>
+    </linearGradient>
+    <linearGradient id="vLabel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7D8471"/>
+      <stop offset="1" stop-color="#5D6553"/>
+    </linearGradient>
+    <filter id="vShadow" x="-40%" y="-30%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#2B2A27" flood-opacity="0.2"/>
+    </filter>
+    <filter id="vGrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#vBg)"/>
+  <ellipse cx="600" cy="742" rx="470" ry="54" fill="#C9BBA3" opacity="0.45"/>
+  <circle cx="930" cy="170" r="230" fill="#F5F1EA" opacity="0.5"/>
+
+  <!-- bag -->
+  <g transform="translate(420 150)" filter="url(#vShadow)">
+    <path d="M14 30h332l14 82v456a18 18 0 0 1-18 18H18a18 18 0 0 1-18-18V112z" fill="url(#vBag)"/>
+    <path d="M14 30h332l10 58H4z" fill="#CFC3AE"/>
+    <path d="M346 88H14" stroke="#B8AB95" stroke-width="2"/>
+    <g stroke="#B8AB95" stroke-width="2" opacity="0.7">
+      <line x1="120" y1="88" x2="120" y2="586"/>
+      <line x1="240" y1="88" x2="240" y2="586"/>
+    </g>
+
+    <rect x="62" y="176" width="236" height="286" rx="8" fill="url(#vLabel)"/>
+    <text x="180" y="240" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#DCE0D2">SLOW ROASTED</text>
+    <text x="180" y="322" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#F5F1EA">Verde</text>
+    <line x1="112" y1="352" x2="248" y2="352" stroke="#E8DFD0" stroke-opacity="0.4"/>
+    <text x="180" y="384" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#E8DFD0">COFFEE ROASTERS</text>
+    <text x="180" y="432" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#C9D0C0">SINGLE ORIGIN · 250 G</text>
+
+    <text x="180" y="520" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#6E6A62">BANGLADESH</text>
+    <text x="180" y="546" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#2B2A27">Lot No. 004</text>
+  </g>
+
+  <!-- cup -->
+  <g transform="translate(756 520)" filter="url(#vShadow)">
+    <ellipse cx="64" cy="176" rx="88" ry="16" fill="#C4B7A2" opacity="0.6"/>
+    <path d="M0 40h128l-12 116a20 20 0 0 1-20 18H32a20 20 0 0 1-20-18z" fill="#F5F1EA"/>
+    <ellipse cx="64" cy="40" rx="64" ry="14" fill="#E8DFD0"/>
+    <ellipse cx="64" cy="40" rx="52" ry="10" fill="#6B4F3A" opacity="0.8"/>
+    <path d="M128 66h16a30 30 0 0 1 0 60h-20" fill="none" stroke="#F5F1EA" stroke-width="12" stroke-linecap="round"/>
+    <path d="M30 70c6 18 6 38 0 56" stroke="#D9CDB8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- beans -->
+  <g fill="#4F3B2C">
+    <ellipse cx="286" cy="700" rx="22" ry="14" transform="rotate(-24 286 700)"/>
+    <ellipse cx="242" cy="748" rx="20" ry="13" transform="rotate(12 242 748)"/>
+    <ellipse cx="326" cy="768" rx="18" ry="12" transform="rotate(40 326 768)"/>
+    <ellipse cx="968" cy="756" rx="21" ry="13" transform="rotate(-8 968 756)"/>
+    <ellipse cx="1016" cy="714" rx="18" ry="12" transform="rotate(34 1016 714)"/>
+  </g>
+  <g stroke="#8A6A50" stroke-width="1.4" fill="none" opacity="0.8">
+    <path d="M272 693c10 4 18 10 26 16"/>
+    <path d="M230 742c10 2 18 6 24 12"/>
+    <path d="M314 761c8 4 14 10 20 16"/>
+    <path d="M956 750c8 2 16 6 22 12"/>
+    <path d="M1004 708c8 3 14 8 20 14"/>
+  </g>
+
+  <rect width="1200" height="900" filter="url(#vGrain)"/>
+</svg>

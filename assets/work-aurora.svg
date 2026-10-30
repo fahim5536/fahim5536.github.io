@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="auroraTitle auroraDesc">
+  <title id="auroraTitle">Aurora Studio identity placeholder</title>
+  <desc id="auroraDesc">Two business cards on a sand background, one cream and one sage, with a serif monogram.</desc>
+  <defs>
+    <linearGradient id="aBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EDE6DA"/>
+      <stop offset="1" stop-color="#E3D9C8"/>
+    </linearGradient>
+    <filter id="aShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#2B2A27" flood-opacity="0.18"/>
+    </filter>
+    <filter id="aGrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#aBg)"/>
+  <circle cx="930" cy="160" r="260" fill="#F5F1EA" opacity="0.55"/>
+
+  <!-- back card -->
+  <g transform="translate(255 300) rotate(-9)" filter="url(#aShadow)">
+    <rect width="540" height="320" rx="12" fill="#7D8471"/>
+    <text x="48" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#F5F1EA">Aurora</text>
+    <text x="50" y="122" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="5" fill="#E8DFD0">STUDIO</text>
+    <text x="48" y="268" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="2" fill="#DCE0D2">AURORA.STUDIO</text>
+    <circle cx="472" cy="268" r="18" fill="none" stroke="#E8DFD0" stroke-width="1.2" opacity="0.8"/>
+    <circle cx="472" cy="268" r="5" fill="#E8DFD0" opacity="0.8"/>
+  </g>
+
+  <!-- front card -->
+  <g transform="translate(430 430) rotate(4)" filter="url(#aShadow)">
+    <rect width="540" height="320" rx="12" fill="#F5F1EA"/>
+    <rect x="1" y="1" width="538" height="318" rx="11" fill="none" stroke="#2B2A27" stroke-opacity="0.08"/>
+    <circle cx="86" cy="96" r="44" fill="none" stroke="#2B2A27" stroke-opacity="0.5"/>
+    <text x="86" y="113" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#2B2A27">A</text>
+    <text x="152" y="86" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#2B2A27">Aurora Studio</text>
+    <text x="154" y="112" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="4" fill="#6E6A62">BRAND &amp; DIGITAL DESIGN</text>
+    <line x1="48" y1="168" x2="492" y2="168" stroke="#2B2A27" stroke-opacity="0.12"/>
+    <text x="48" y="206" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#6E6A62">Tamzid Abdur Rahman</text>
+    <text x="48" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8A857C">Creative Partner</text>
+    <text x="48" y="276" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="1.5" fill="#5D6553">hello@aurora.studio</text>
+  </g>
+
+  <rect width="1200" height="900" filter="url(#aGrain)"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800" role="img" aria-labelledby="g2t g2d">
+  <title id="g2t">Sage and Stone brand board placeholder</title>
+  <desc id="g2d">A brand board with three colour swatches, a circular monogram and a palette label.</desc>
+  <defs>
+    <filter id="g2g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1000" height="800" fill="#EDE6DA"/>
+  <text x="64" y="90" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="4" fill="#6E6A62">SAGE &amp; STONE — IDENTITY</text>
+  <circle cx="360" cy="330" r="150" fill="none" stroke="#2B2A27" stroke-opacity="0.3"/>
+  <text x="360" y="392" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="150" fill="#2B2A27">S</text>
+  <text x="360" y="540" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="6" fill="#6E6A62">ATELIER</text>
+  <g transform="translate(600 190)">
+    <rect width="110" height="150" rx="6" fill="#7D8471"/>
+    <rect x="140" width="110" height="150" rx="6" fill="#8A857C"/>
+    <rect x="280" width="110" height="150" rx="6" fill="#2B2A27"/>
+    <text x="0" y="188" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#6E6A62">SAGE</text>
+    <text x="140" y="188" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#6E6A62">STONE</text>
+    <text x="280" y="188" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#6E6A62">INK</text>
+  </g>
+  <g transform="translate(600 470)">
+    <rect width="320" height="132" rx="8" fill="#F5F1EA"/>
+    <text x="24" y="40" font-family="Georgia, serif" font-size="22" fill="#2B2A27">Sage &amp; Stone</text>
+    <line x1="24" y1="58" x2="296" y2="58" stroke="#2B2A27" stroke-opacity="0.12"/>
+    <text x="24" y="84" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#6E6A62">BRAND GUIDELINES / V1.0</text>
+    <text x="24" y="108" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#8A857C">Logotype · Palette · Typography</text>
+  </g>
+  <text x="64" y="720" font-family="Georgia, serif" font-size="18" fill="#2B2A27" font-style="italic">A quiet system for a working studio.</text>
+  <rect width="1000" height="800" filter="url(#g2g)"/>
+</svg>

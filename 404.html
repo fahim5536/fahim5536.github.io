@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Tamzid Abdur Rahman</title>
+  <meta name="description" content="This page could not be found. Return to the portfolio home page.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F5F1EA">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232B2A27'/%3E%3Cpath d='M17 21h30M32 21v27' stroke='%23F5F1EA' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='47' cy='45' r='4.5' fill='%237D8471'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F5F1EA; --sand: #E8DFD0; --stone: #6E6A62; --sage: #7D8471;
+      --text: #2B2A27; --line: rgba(43, 42, 39, 0.14);
+      --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 24px;
+      background:
+        radial-gradient(40rem 30rem at 80% 10%, rgba(232, 223, 208, 0.6), transparent 65%),
+        var(--bg);
+      color: var(--text); font-family: var(--sans); line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(560px, 100%); }
+    .mark {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; margin-bottom: 34px; border-radius: 999px;
+      background: var(--text); color: var(--bg); font-family: var(--serif); font-size: 1rem;
+    }
+    .eyebrow {
+      display: flex; align-items: center; gap: 10px; margin: 0 0 18px;
+      color: var(--stone); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 5px; height: 5px; border-radius: 999px; background: var(--sage); }
+    .code {
+      margin: 0; font-family: var(--serif); font-size: clamp(5rem, 18vw, 9rem);
+      font-weight: 500; line-height: 0.85; letter-spacing: -0.06em;
+    }
+    h1 {
+      margin: 28px 0 0; font-family: var(--serif); font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 500; line-height: 1.12; letter-spacing: -0.02em;
+    }
+    p.lede { margin: 16px 0 0; max-width: 40ch; color: #514E48; font-size: 0.975rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 24px; border: 1px solid var(--text); border-radius: 999px;
+      background: var(--text); color: var(--bg); font-size: 0.8125rem; font-weight: 500;
+      text-decoration: none; transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: #3B3934; }
+    .btn-ghost {
+      border-color: var(--line); background: transparent; color: var(--text);
+    }
+    .btn-ghost:hover { background: var(--sand); border-color: var(--sand); }
+    .btn:focus-visible, a:focus-visible {
+      outline: 2px solid #5D6553; outline-offset: 3px; border-radius: 999px;
+    }
+    footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--stone); font-size: 0.6875rem; letter-spacing: 0.04em; }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">T</div>
+    <p class="eyebrow">Error 404</p>
+    <p class="code" aria-hidden="true">404</p>
+    <h1>This page drifted off the grid.</h1>
+    <p class="lede">The address may be mistyped, or the page may have moved. The work, the gallery and the contact form are all still one step away.</p>
+    <div class="actions">
+      <a class="btn" href="/">Back to home</a>
+      <a class="btn btn-ghost" href="/#contact">Get in touch</a>
+    </div>
+    <footer>Tamzid Abdur Rahman — Developer &amp; Graphic Designer</footer>
+  </main>
+</body>
+</html>

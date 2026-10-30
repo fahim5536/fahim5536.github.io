@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="g5t g5d">
+  <title id="g5t">Studio marks placeholder</title>
+  <desc id="g5d">A grid of six geometric monogram marks in ink and sage on cream.</desc>
+  <defs>
+    <filter id="g5g"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="800" height="1000" fill="#F5F1EA"/>
+  <text x="64" y="96" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="4" fill="#6E6A62">STUDIO MARKS — SELECTED</text>
+  <text x="64" y="176" font-family="Georgia, serif" font-size="46" fill="#2B2A27">Monograms</text>
+
+  <g transform="translate(64 230)">
+    <g>
+      <rect width="330" height="300" fill="#EDE6DA"/>
+      <circle cx="165" cy="150" r="76" fill="none" stroke="#2B2A27" stroke-width="1.4"/>
+      <text x="165" y="184" text-anchor="middle" font-family="Georgia, serif" font-size="88" fill="#2B2A27">T</text>
+      <text x="20" y="278" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8A857C">01 / SERIF</text>
+    </g>
+    <g transform="translate(370 0)">
+      <rect width="330" height="300" fill="#2B2A27"/>
+      <text x="165" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="120" fill="#F5F1EA">F</text>
+      <circle cx="238" cy="108" r="10" fill="#7D8471"/>
+      <text x="20" y="278" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8A857C">02 / INK</text>
+    </g>
+    <g transform="translate(0 330)">
+      <rect width="330" height="300" fill="#7D8471"/>
+      <path d="M110 210V90h110" fill="none" stroke="#F5F1EA" stroke-width="2"/>
+      <path d="M220 210V90H110" fill="none" stroke="#F5F1EA" stroke-width="2" opacity="0.5"/>
+      <text x="20" y="278" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#E8DFD0">03 / FRAME</text>
+    </g>
+    <g transform="translate(370 330)">
+      <rect width="330" height="300" fill="#E8DFD0"/>
+      <circle cx="165" cy="150" r="88" fill="none" stroke="#2B2A27" stroke-opacity="0.4"/>
+      <path d="M165 62v176M77 150h176" stroke="#2B2A27" stroke-width="1.2" opacity="0.4"/>
+      <text x="165" y="182" text-anchor="middle" font-family="Georgia, serif" font-size="70" fill="#2B2A27">A</text>
+      <text x="20" y="278" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#6E6A62">04 / MARK</text>
+    </g>
+  </g>
+
+  <line x1="64" y1="912" x2="736" y2="912" stroke="#2B2A27" stroke-opacity="0.12"/>
+  <text x="64" y="948" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8A857C">SKETCHBOOK · MARK EXPLORATIONS</text>
+  <rect width="800" height="1000" filter="url(#g5g)"/>
+</svg>

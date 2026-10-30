@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F1EA"/>
+      <stop offset="1" stop-color="#E8DFD0"/>
+    </linearGradient>
+    <filter id="ogGrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.04"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <circle cx="1050" cy="90" r="260" fill="#EDE6DA" opacity="0.9"/>
+  <circle cx="1050" cy="90" r="150" fill="#E8DFD0" opacity="0.7"/>
+
+  <g transform="translate(84 96)">
+    <text font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#6E6A62">FAHIM — GAZIPUR, BANGLADESH</text>
+  </g>
+
+  <g transform="translate(80 170)">
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="96" fill="#2B2A27">Tamzid Abdur</text>
+    <text y="104" font-family="Georgia, 'Times New Roman', serif" font-size="96" fill="#2B2A27">Rahman</text>
+    <line x1="0" y1="148" x2="240" y2="148" stroke="#2B2A27" stroke-opacity="0.25"/>
+    <text y="196" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="6" fill="#5D6553">DEVELOPER &amp; GRAPHIC DESIGNER</text>
+  </g>
+
+  <g transform="translate(930 380)">
+    <circle cx="80" cy="80" r="80" fill="none" stroke="#2B2A27" stroke-opacity="0.25"/>
+    <text x="80" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="82" fill="#2B2A27">T</text>
+    <circle cx="146" cy="34" r="11" fill="#7D8471"/>
+  </g>
+
+  <g transform="translate(84 556)">
+    <circle cx="5" cy="-5" r="5" fill="#7D8471"/>
+    <text x="22" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2B2A27">tamzidabdurrahman.me</text>
+  </g>
+
+  <rect width="1200" height="630" filter="url(#ogGrain)"/>
+</svg>

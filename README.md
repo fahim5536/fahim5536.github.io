@@ -15,7 +15,7 @@ index.html          all seven sections
 css/style.css       design system, layout, responsive rules, motion
 js/main.js          nav, scroll reveal, GitHub projects, lightbox, form, year
 js/protect.js       anti-copy deterrents + devtools detection
-assets/             SVG portrait, project/gallery placeholders, og-image.png, favicon
+assets/             portrait.jpg, project/gallery placeholders, og-image.png, favicon
 CNAME               tamzidabdurrahman.me
 robots.txt  sitemap.xml  .nojekyll
 ```
@@ -121,10 +121,10 @@ That sets the identity for one commit only and does not change your global confi
 - **Email** — replace every `your@email.com` in `index.html` (hero, contact, footer).
 - **Formspree** — create a form at formspree.io, then replace `YOUR_FORM_ID` in the
   form action. The form also works without JavaScript via a normal POST.
-- **Photo** — replace `assets/portrait.svg` with your own image (keep roughly 4:5),
-  update the `<img src>`, `width`, `height` and `alt` in the hero. The social preview
-  image is `assets/og-image.png` (1200×630) — regenerate it when the name, role or
-  photo changes.
+- **Photo** — the hero uses `assets/portrait.jpg` (4:5). To swap it, keep the same
+  aspect ratio and update the `<img src>`, `width`, `height` and `alt` in the hero,
+  plus the Person schema `image`. The social preview image is `assets/og-image.png`
+  (1200×630) — regenerate it when the name or role changes.
 - **GitHub projects** — update repository name, description, topics, homepage and
   visibility on GitHub itself; the site picks them up on the next cache refresh.
   If you change accounts, update `GH_USER` and `GH_REPOS_URL` in `js/main.js`, the

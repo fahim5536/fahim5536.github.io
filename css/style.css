@@ -1764,11 +1764,13 @@ body.lightbox-open {
 
 .contact-mail a {
   display: inline-block;
+  max-width: 100%;
   border-bottom: 1px solid var(--line-strong);
   font-family: var(--serif);
   font-size: clamp(1.35rem, 2.6vw, 1.75rem);
   letter-spacing: -0.01em;
   line-height: 1.4;
+  overflow-wrap: anywhere;
   transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 
@@ -1809,6 +1811,18 @@ body.lightbox-open {
 
 .contact-facts svg {
   flex: none;
+  color: var(--sage-deep);
+}
+
+.contact-facts a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.25s var(--ease);
+}
+
+.contact-facts a:hover {
   color: var(--sage-deep);
 }
 
@@ -2315,6 +2329,13 @@ body.lightbox-open {
 
   .lightbox-next {
     right: 8px;
+  }
+}
+
+/* The email is one long token; below this width it no longer fits the gutter. */
+@media (max-width: 380px) {
+  .contact-mail a {
+    font-size: 1.1rem;
   }
 }
 

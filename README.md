@@ -118,7 +118,10 @@ That sets the identity for one commit only and does not change your global confi
 
 - **Social usernames** — search for `YOUR_USERNAME` in `index.html` (hero, contact,
   footer, and the JSON-LD `sameAs` list). GitHub is already set to `fahim5536`.
-- **Email** — replace every `your@email.com` in `index.html` (hero, contact, footer).
+- **Email and phone** — currently `contact@tamzidabdurrahman.me` and `+8801402822295`
+  (displayed as `01402 822295`). They appear in the hero icon links, the Contact
+  section and the Person schema `email` / `telephone` — update all three places if
+  they change.
 - **Formspree** — create a form at formspree.io, then replace `YOUR_FORM_ID` in the
   form action. The form also works without JavaScript via a normal POST.
 - **Photo** — the hero uses `assets/portrait.jpg` (4:5). To swap it, keep the same

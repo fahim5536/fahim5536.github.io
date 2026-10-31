@@ -598,6 +598,7 @@ button {
   font-size: 0.9rem;
   line-height: 1.9;
   letter-spacing: 0.005em;
+  text-wrap: balance;
 }
 
 .hero-actions {

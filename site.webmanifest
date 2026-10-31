@@ -1,0 +1,34 @@
+{
+  "name": "Tamzid Abdur Rahman — Portfolio",
+  "short_name": "TAR.",
+  "description": "Portfolio of Tamzid Abdur Rahman (Fahim), a web developer and graphic designer in Gazipur, Bangladesh.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#F5F1EA",
+  "background_color": "#F5F1EA",
+  "icons": [
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

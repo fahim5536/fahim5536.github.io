@@ -124,8 +124,9 @@ That sets the identity for one commit only and does not change your global confi
 
 ## Replace before publishing
 
-- **Social usernames** — search for `YOUR_USERNAME` in `index.html` (hero, contact,
-  footer, and the JSON-LD `sameAs` list). GitHub is already set to `fahim5536`.
+- **Social links** — GitHub `fahim5536`, Instagram `dev_fahim` and Facebook
+  `md.fahim.857746` are set in the hero, contact section, footer and the Person
+  schema `sameAs` list. Update all four places together if an account changes.
 - **Email and phone** — currently `contact@tamzidabdurrahman.me` and `+8801402822295`
   (displayed as `01402 822295`). They appear in the hero icon links, the Contact
   section and the Person schema `email` / `telephone` — update all three places if

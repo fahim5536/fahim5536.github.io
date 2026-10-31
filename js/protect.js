@@ -35,6 +35,11 @@
 (function () {
   "use strict";
 
+  // Search and social crawlers get the page untouched: no selection locking,
+  // no overlay and no devtools checks, so indexed content is never blocked.
+  var CRAWLER_UA = /Googlebot|Google-InspectionTool|Storebot-Google|Bingbot|BingPreview|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou|Exabot|facebookexternalhit|Twitterbot|LinkedInBot|Pinterestbot|Applebot|AhrefsBot|SemrushBot|MJ12bot|DotBot|rogerbot|ia_archiver/i;
+  if (CRAWLER_UA.test(navigator.userAgent || "")) return;
+
   var root = document.documentElement;
   var body = document.body;
   var EDITABLE = 'input, textarea, select, [contenteditable="true"]';

@@ -61,7 +61,7 @@
       var isActive = link.getAttribute("href") === "#" + current.id;
       link.classList.toggle("is-active", isActive);
       if (isActive) {
-        link.setAttribute("aria-current", "location");
+        link.setAttribute("aria-current", "page");
       } else {
         link.removeAttribute("aria-current");
       }

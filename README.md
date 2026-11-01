@@ -12,6 +12,7 @@ repository list stays current without editing HTML. Everything else is static.
 ```
 index.html          all seven sections
 404.html            custom not-found page (self-contained styles)
+sent.html           contact-form return page after a no-JavaScript submit (noindex)
 css/style.css       design system, layout, responsive rules, motion
 js/main.js          nav, scroll reveal, GitHub projects, lightbox, form, year
 js/protect.js       anti-copy deterrents + devtools detection
@@ -131,8 +132,11 @@ That sets the identity for one commit only and does not change your global confi
   (displayed as `01402 822295`). They appear in the hero icon links, the Contact
   section and the Person schema `email` / `telephone` — update all three places if
   they change.
-- **Formspree** — the form posts to `https://formspree.io/f/xljjpavk`. The form also
-  works without JavaScript via a normal POST; Formspree redirects after submit.
+- **Formspree** — the form posts to `https://formspree.io/f/xljjpavk`. With JavaScript
+  on, `js/main.js` sends a `fetch` POST and shows the status line in place. With
+  JavaScript off it is a normal POST, and the hidden `_next` field returns the visitor
+  to `https://tamzidabdurrahman.me/sent.html`. Keep that absolute URL if the domain
+  changes, and keep `sent.html` out of `sitemap.xml` (it is `noindex`).
 - **Logo and icons** — there was no `assets/logo.png`, so the icons currently use a
   placeholder "T." monogram (charcoal `#2B2A27` on `#F5F1EA`) drawn in `favicon.svg`.
   Replace the SVG with the real logo, then regenerate the PNG/ICO set at 16, 32, 48,

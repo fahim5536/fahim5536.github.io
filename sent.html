@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Message sent — Tamzid Abdur Rahman</title>
+  <meta name="description" content="Thanks for reaching out. Your message has been delivered; replies usually arrive within two days.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F5F1EA">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F5F1EA; --sand: #E8DFD0; --stone: #6E6A62; --sage: #7D8471;
+      --text: #2B2A27; --line: rgba(43, 42, 39, 0.14);
+      --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 24px;
+      background:
+        radial-gradient(40rem 30rem at 80% 10%, rgba(232, 223, 208, 0.6), transparent 65%),
+        var(--bg);
+      color: var(--text); font-family: var(--sans); line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { width: min(560px, 100%); }
+    .mark {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; margin-bottom: 34px; border-radius: 999px;
+      background: var(--sage); color: var(--bg); font-size: 1.1rem;
+    }
+    .eyebrow {
+      display: flex; align-items: center; gap: 10px; margin: 0 0 18px;
+      color: var(--stone); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 5px; height: 5px; border-radius: 999px; background: var(--sage); }
+    h1 {
+      margin: 0; font-family: var(--serif); font-size: clamp(1.9rem, 6vw, 2.8rem);
+      font-weight: 500; line-height: 1.12; letter-spacing: -0.02em;
+    }
+    p.lede { margin: 16px 0 0; max-width: 42ch; color: #514E48; font-size: 0.975rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 24px; border: 1px solid var(--text); border-radius: 999px;
+      background: var(--text); color: var(--bg); font-size: 0.8125rem; font-weight: 500;
+      text-decoration: none; transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: #3B3934; }
+    .btn-ghost { border-color: var(--line); background: transparent; color: var(--text); }
+    .btn-ghost:hover { background: var(--sand); border-color: var(--sand); }
+    .btn:focus-visible, a:focus-visible {
+      outline: 2px solid #5D6553; outline-offset: 3px; border-radius: 999px;
+    }
+    .direct { margin: 26px 0 0; font-size: 0.8125rem; color: var(--stone); }
+    .direct a { color: var(--text); overflow-wrap: anywhere; }
+    footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--stone); font-size: 0.6875rem; letter-spacing: 0.04em; }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">&#10003;</div>
+    <p class="eyebrow">Received</p>
+    <h1>Your message is on its way.</h1>
+    <p class="lede">Thanks for writing — it landed in my inbox. I usually reply within two days; if it is urgent, email or phone works just as well.</p>
+    <div class="actions">
+      <a class="btn" href="/#home">Back to the portfolio</a>
+      <a class="btn btn-ghost" href="/#contact">Send another</a>
+    </div>
+    <p class="direct">
+      Or reach me directly at
+      <a href="mailto:contact@tamzidabdurrahman.me">contact@tamzidabdurrahman.me</a>
+      / <a href="tel:+8801402822295">01402 822295</a>.
+    </p>
+    <footer>Tamzid Abdur Rahman — Web Developer &amp; Graphic Designer · Gazipur, Bangladesh</footer>
+  </main>
+</body>
+</html>

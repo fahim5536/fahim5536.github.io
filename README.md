@@ -131,8 +131,8 @@ That sets the identity for one commit only and does not change your global confi
   (displayed as `01402 822295`). They appear in the hero icon links, the Contact
   section and the Person schema `email` / `telephone` — update all three places if
   they change.
-- **Formspree** — create a form at formspree.io, then replace `YOUR_FORM_ID` in the
-  form action. The form also works without JavaScript via a normal POST.
+- **Formspree** — the form posts to `https://formspree.io/f/xljjpavk`. The form also
+  works without JavaScript via a normal POST; Formspree redirects after submit.
 - **Logo and icons** — there was no `assets/logo.png`, so the icons currently use a
   placeholder "T." monogram (charcoal `#2B2A27` on `#F5F1EA`) drawn in `favicon.svg`.
   Replace the SVG with the real logo, then regenerate the PNG/ICO set at 16, 32, 48,

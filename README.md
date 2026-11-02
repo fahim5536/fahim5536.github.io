@@ -20,7 +20,7 @@ favicon.svg         monogram source for the site icons
 favicon.ico         16/32/48 px icon for browsers and Google
 favicon-48x48.png  favicon-96x96.png  favicon-192x192.png  favicon-512x512.png
 apple-touch-icon.png (180×180)  site.webmanifest
-assets/             portrait.jpg, project/gallery placeholders, og-image.png
+assets/             portrait.jpg, og-image.png, design-*.jpg (the eight gallery pieces)
 CNAME               tamzidabdurrahman.me
 robots.txt  sitemap.xml  .nojekyll
 ```
@@ -151,8 +151,17 @@ That sets the identity for one commit only and does not change your global confi
   visibility on GitHub itself; the site picks them up on the next cache refresh.
   If you change accounts, update `GH_USER` and `GH_REPOS_URL` in `js/main.js`, the
   profile links in `index.html`, the JSON-LD `sameAs` entry and `sitemap.xml`.
-- **Gallery** — replace the six `assets/gallery-*.svg` files and their captions;
-  keep `width`/`height` sensible so lazy loading reserves the right space.
+- **Gallery** — the eight real design pieces live in `assets/` as
+  `design-*.jpg`. Each `<figure>` in the `#gallery` section carries a
+  `data-caption` (shown in the lightbox), an `aria-label`, descriptive `alt` text and
+  the image's true `width`/`height`, so lazy loading reserves the right space and
+  nothing shifts while scrolling. To swap a piece: export it with the long edge at
+  1100 px or less as a progressive JPEG (aim for under ~150 KB), save it over the
+  matching `assets/design-*.jpg`, and update `width`/`height`/`alt` if the size or
+  subject changed. Adding or removing a figure is enough to change the lightbox
+  count and arrow-key range — `js/main.js` reads the list from the DOM. The grid is
+  a CSS multi-column masonry (2 columns on phones, 2 on tablets, 3 from 1000 px),
+  which is why mixed square, portrait and landscape artwork sits well together.
 - **Sitemap date** — update `<lastmod>` in `sitemap.xml` when content changes.
 
 ## Optional: minify before uploading

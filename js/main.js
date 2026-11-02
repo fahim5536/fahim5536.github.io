@@ -190,6 +190,16 @@
     var lastFocused = null;
     var currentIndex = 0;
 
+    var preloadNeighbours = function (index) {
+      [index - 1, index + 1].forEach(function (offset) {
+        var neighbour = triggers[(offset + triggers.length) % triggers.length];
+        var image = neighbour && neighbour.querySelector("img");
+        if (!image) return;
+        var cache = new Image();
+        cache.src = image.currentSrc || image.src;
+      });
+    };
+
     var showSlide = function (index) {
       currentIndex = (index + triggers.length) % triggers.length;
       var trigger = triggers[currentIndex];
@@ -210,6 +220,8 @@
         lightboxCounter.textContent =
           currentIndex + 1 + " / " + triggers.length;
       }
+
+      preloadNeighbours(currentIndex);
     };
 
     var openLightbox = function (index) {
